@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HodlInfo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>HODLINFO</h1>
+        <nav>
+          <ul>
+            <li><a href="#">INR</a></li>
+            <li><a href="#">BTC</a></li>
+            <li><a href="#">BUY BTC</a></li>
+          </ul>
+        </nav>
+        <div id="best-price">
+          Best Price to Trade: <span id="best-price-value">₹0</span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="stats">
+          <div class="stat"><span id="stat-5min">0%</span><br />5 Mins</div>
+          <div class="stat"><span id="stat-1hr">0%</span><br />1 Hour</div>
+          <div class="stat"><span id="stat-1day">0%</span><br />1 Day</div>
+          <div class="stat"><span id="stat-7days">0%</span><br />7 Days</div>
+        </div>
+        <button id="mode-toggle">Dark Mode</button>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Platform</th>
+              <th>Last Traded Price</th>
+              <th>Buy / Sell Price</th>
+              <th>Difference</th>
+              <th>Savings</th>
+            </tr>
+          </thead>
+          <tbody id="ticker-table"></tbody>
+        </table>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
